@@ -9,12 +9,12 @@ import UIKit
 
 class TotalBillView: UIView {
     
-    lazy var titleLabel: UILabel = {
+    //MARK: - UIProperties
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         
         label.text = "Total  Bill "
         label.textColor = #colorLiteral(red: 0.1882352941, green: 0.2235294118, blue: 0.2784313725, alpha: 1)
-        label.font = UIFont(name: "Avenir Next", size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -27,7 +27,6 @@ class TotalBillView: UIView {
         textField.layer.cornerRadius = 10
         textField.textColor = .black
         textField.tintColor = #colorLiteral(red: 0.5647058824, green: 0.1529411765, blue: 0.5568627451, alpha: 1)
-        textField.font = UIFont(name: "Avenir Next Bold", size: 48)
         textField.textAlignment = .center
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.keyboardType = .numberPad
@@ -35,6 +34,7 @@ class TotalBillView: UIView {
         return textField
     }()
     
+    //MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -45,24 +45,30 @@ class TotalBillView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupView() {
-        translatesAutoresizingMaskIntoConstraints = false
-    
-        addSubview(titleLabel)
-        addSubview(summTextField)
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
-//        backgroundColor = .red
+        titleLabel.font = UIFont(name: "Avenir Next", size: frame.width / 25)
+        summTextField.font = UIFont(name: "Avenir Next Bold", size: frame.height / 2.6)
     }
     
-    func setConstraints() {
+    //MARK: - Private methods
+    private func setupView() {
+        translatesAutoresizingMaskIntoConstraints = false
+        addSubview(titleLabel)
+        addSubview(summTextField)
+    }
+    
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 0),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            titleLabel.heightAnchor.constraint(equalToConstant: 20),
             
             summTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 2),
             summTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             summTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            summTextField.heightAnchor.constraint(equalToConstant: 100)
+            summTextField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
         ])
     }
 }

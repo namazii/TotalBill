@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BCC13F8128B78DB500E59FBA /* TotalBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC13F8028B78DB500E59FBA /* TotalBillView.swift */; };
 		BCC13F8328B793FB00E59FBA /* PersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC13F8228B793FB00E59FBA /* PersonsView.swift */; };
+		BCC13F8728B7A42100E59FBA /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC13F8628B7A42100E59FBA /* TipsCollectionViewCell.swift */; };
+		BCC13F8E28B7A77500E59FBA /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC13F8D28B7A77500E59FBA /* TipsView.swift */; };
 		BCD3A68128B73C8E00079312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3A68028B73C8E00079312 /* AppDelegate.swift */; };
 		BCD3A68328B73C8E00079312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3A68228B73C8E00079312 /* SceneDelegate.swift */; };
 		BCD3A68528B73C8E00079312 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3A68428B73C8E00079312 /* MainViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		BCC13F8028B78DB500E59FBA /* TotalBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBillView.swift; sourceTree = "<group>"; };
 		BCC13F8228B793FB00E59FBA /* PersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsView.swift; sourceTree = "<group>"; };
+		BCC13F8628B7A42100E59FBA /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BCC13F8D28B7A77500E59FBA /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		BCD3A67D28B73C8E00079312 /* TotalBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD3A68028B73C8E00079312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD3A68228B73C8E00079312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCC13F8828B7A44000E59FBA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BCD3A68028B73C8E00079312 /* AppDelegate.swift */,
+				BCD3A68228B73C8E00079312 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BCC13F8928B7A47600E59FBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCC13F8028B78DB500E59FBA /* TotalBillView.swift */,
+				BCC13F8228B793FB00E59FBA /* PersonsView.swift */,
+				BCC13F8D28B7A77500E59FBA /* TipsView.swift */,
+				BCC13F8C28B7A4FE00E59FBA /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCC13F8A28B7A49D00E59FBA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BCD3A68428B73C8E00079312 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BCC13F8B28B7A4D000E59FBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCD3A68928B73C8F00079312 /* Assets.xcassets */,
+				BCD3A68B28B73C8F00079312 /* LaunchScreen.storyboard */,
+				BCD3A68E28B73C8F00079312 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCC13F8C28B7A4FE00E59FBA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BCC13F8628B7A42100E59FBA /* TipsCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		BCD3A67428B73C8E00079312 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +108,10 @@
 		BCD3A67F28B73C8E00079312 /* TotalBill */ = {
 			isa = PBXGroup;
 			children = (
-				BCD3A68028B73C8E00079312 /* AppDelegate.swift */,
-				BCD3A68228B73C8E00079312 /* SceneDelegate.swift */,
-				BCD3A68428B73C8E00079312 /* MainViewController.swift */,
-				BCD3A68928B73C8F00079312 /* Assets.xcassets */,
-				BCD3A68B28B73C8F00079312 /* LaunchScreen.storyboard */,
-				BCD3A68E28B73C8F00079312 /* Info.plist */,
-				BCC13F8028B78DB500E59FBA /* TotalBillView.swift */,
-				BCC13F8228B793FB00E59FBA /* PersonsView.swift */,
+				BCC13F8A28B7A49D00E59FBA /* ViewController */,
+				BCC13F8928B7A47600E59FBA /* Views */,
+				BCC13F8828B7A44000E59FBA /* Application */,
+				BCC13F8B28B7A4D000E59FBA /* Resources */,
 			);
 			path = TotalBill;
 			sourceTree = "<group>";
@@ -143,6 +189,8 @@
 				BCC13F8128B78DB500E59FBA /* TotalBillView.swift in Sources */,
 				BCC13F8328B793FB00E59FBA /* PersonsView.swift in Sources */,
 				BCD3A68528B73C8E00079312 /* MainViewController.swift in Sources */,
+				BCC13F8E28B7A77500E59FBA /* TipsView.swift in Sources */,
+				BCC13F8728B7A42100E59FBA /* TipsCollectionViewCell.swift in Sources */,
 				BCD3A68128B73C8E00079312 /* AppDelegate.swift in Sources */,
 				BCD3A68328B73C8E00079312 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85D2483FS7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TotalBill/Info.plist;
+				INFOPLIST_FILE = TotalBill/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -313,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85D2483FS7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TotalBill/Info.plist;
+				INFOPLIST_FILE = TotalBill/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

@@ -9,13 +9,13 @@ import UIKit
 
 class TipsCollectionViewCell: UICollectionViewCell {
     
+    //MARK: - UIProperties
     lazy var procentLabel: UILabel = {
         let label = UILabel()
         
         label.text = "10$"
         label.textColor = .black
         label.textAlignment = .center
-        label.font = UIFont(name: "Avenir Next Bold", size: 24)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -32,9 +32,9 @@ class TipsCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    //MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupView()
         setConstraints()
     }
@@ -43,19 +43,23 @@ class TipsCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupView() {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        procentLabel.font = UIFont(name: "Avenir Next Bold", size: frame.height / 3.4)
+    }
+    
+    //MARK: - Private methods
+    private func setupView() {
         backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
         layer.cornerRadius = 10
         addSubview(procentLabel)
     }
     
-    func setConstraints() {
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             procentLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 2),
             procentLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -2),
             procentLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
-//            procentLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-//            procentLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

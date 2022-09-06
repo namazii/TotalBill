@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  TotalBill
+
+  Created by Назар Ткаченко on 06.09.2022.
+  
+*/
+
+"Total  Bill " = "Общий счет";
+"Enter the invoice amount and click \"Calculate\"" = "Введите сумму счета и нажмите \"Рассчитать\"";
+"Calculate" = "Рассчитать";
+"Enter total bill" = "Введите общий счет";
+"Enter persons count" = "Введите количество человек";
+"per person" = "на человека";
+"Total  Bill " = "Общий счет";
+"Persons" = "Количество человек";
+"Tips" = "Чаевые";
+

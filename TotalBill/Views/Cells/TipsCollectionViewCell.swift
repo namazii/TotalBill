@@ -13,7 +13,7 @@ class TipsCollectionViewCell: UICollectionViewCell {
     lazy var procentLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "10$"
+        label.text = "10%"
         label.textColor = .black
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false

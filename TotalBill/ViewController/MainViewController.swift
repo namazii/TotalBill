@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Total  Bill "
+        label.text = "Total  Bill ".localized()
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Enter the invoice amount and click \"Calculate\""
+        label.text = "Enter the invoice amount and click \"Calculate\"".localized()
         label.textColor = .black
         label.font = UIFont(name: "Avenir Next Bold", size: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -46,7 +46,7 @@ class MainViewController: UIViewController {
     private lazy var calculateButton: UIButton = {
         let button = UIButton(type: .system)
         
-        button.setTitle("Calculate", for: .normal)
+        button.setTitle("Calculate".localized(), for: .normal)
         button.tintColor = .white
         button.backgroundColor = #colorLiteral(red: 0.5647058824, green: 0.1529411765, blue: 0.5568627451, alpha: 1)
         button.layer.cornerRadius = 10
@@ -93,7 +93,7 @@ class MainViewController: UIViewController {
     @objc func calculateButtonTapped() {
         guard let totalBill = totalBillView.summTextField.text,
               let totalBillInt = Int(totalBill) else {
-            descriptionLabel.text = "Enter total bill"
+            descriptionLabel.text = "Enter total bill".localized()
             descriptionLabel.textColor = .red
             return
         }
@@ -101,11 +101,11 @@ class MainViewController: UIViewController {
         let persons = personsView.counter
         
         if persons < 2 {
-            descriptionLabel.text = "Enter persons count"
+            descriptionLabel.text = "Enter persons count".localized()
             descriptionLabel.textColor = .red
         } else {
             let result = summ / persons
-            descriptionLabel.text = "\(result) per person"
+            descriptionLabel.text = "\(result) " + "per person".localized()
             descriptionLabel.textColor = .black
         }
     }

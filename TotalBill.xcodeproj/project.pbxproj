@@ -11,6 +11,8 @@
 		BCC13F8328B793FB00E59FBA /* PersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC13F8228B793FB00E59FBA /* PersonsView.swift */; };
 		BCC13F8728B7A42100E59FBA /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC13F8628B7A42100E59FBA /* TipsCollectionViewCell.swift */; };
 		BCC13F8E28B7A77500E59FBA /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC13F8D28B7A77500E59FBA /* TipsView.swift */; };
+		BCC4BAEA28C73F490078A608 /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4BAE928C73F490078A608 /* Extension + String.swift */; };
+		BCC4BAED28C7402D0078A608 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCC4BAEF28C7402D0078A608 /* Localizable.strings */; };
 		BCD3A68128B73C8E00079312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3A68028B73C8E00079312 /* AppDelegate.swift */; };
 		BCD3A68328B73C8E00079312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3A68228B73C8E00079312 /* SceneDelegate.swift */; };
 		BCD3A68528B73C8E00079312 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3A68428B73C8E00079312 /* MainViewController.swift */; };
@@ -23,6 +25,9 @@
 		BCC13F8228B793FB00E59FBA /* PersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsView.swift; sourceTree = "<group>"; };
 		BCC13F8628B7A42100E59FBA /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
 		BCC13F8D28B7A77500E59FBA /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		BCC4BAE928C73F490078A608 /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		BCC4BAEE28C7402D0078A608 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BCC4BAF028C740680078A608 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BCD3A67D28B73C8E00079312 /* TotalBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD3A68028B73C8E00079312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD3A68228B73C8E00079312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +82,8 @@
 				BCD3A68928B73C8F00079312 /* Assets.xcassets */,
 				BCD3A68B28B73C8F00079312 /* LaunchScreen.storyboard */,
 				BCD3A68E28B73C8F00079312 /* Info.plist */,
+				BCC4BAE928C73F490078A608 /* Extension + String.swift */,
+				BCC4BAEF28C7402D0078A608 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = BCD3A67428B73C8E00079312;
 			productRefGroup = BCD3A67E28B73C8E00079312 /* Products */;
@@ -175,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCD3A68D28B73C8F00079312 /* LaunchScreen.storyboard in Resources */,
+				BCC4BAED28C7402D0078A608 /* Localizable.strings in Resources */,
 				BCD3A68A28B73C8F00079312 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +197,7 @@
 			files = (
 				BCC13F8128B78DB500E59FBA /* TotalBillView.swift in Sources */,
 				BCC13F8328B793FB00E59FBA /* PersonsView.swift in Sources */,
+				BCC4BAEA28C73F490078A608 /* Extension + String.swift in Sources */,
 				BCD3A68528B73C8E00079312 /* MainViewController.swift in Sources */,
 				BCC13F8E28B7A77500E59FBA /* TipsView.swift in Sources */,
 				BCC13F8728B7A42100E59FBA /* TipsCollectionViewCell.swift in Sources */,
@@ -199,6 +209,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		BCC4BAEF28C7402D0078A608 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC4BAEE28C7402D0078A608 /* en */,
+				BCC4BAF028C740680078A608 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BCD3A68B28B73C8F00079312 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -214,6 +233,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -274,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -330,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 85D2483FS7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TotalBill/Resources/Info.plist;
@@ -339,11 +360,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = mobilenie.TotalBill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -358,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 85D2483FS7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TotalBill/Resources/Info.plist;
@@ -367,11 +389,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = mobilenie.TotalBill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

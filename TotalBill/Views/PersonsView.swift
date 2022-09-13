@@ -13,7 +13,7 @@ class PersonsView: UIView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Persons"
+        label.text = "Persons".localized()
         label.textColor = #colorLiteral(red: 0.1882352941, green: 0.2235294118, blue: 0.2784313725, alpha: 1)
         label.translatesAutoresizingMaskIntoConstraints = false
         

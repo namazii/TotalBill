@@ -1,9 +1,26 @@
-# TotalBill
-My pet project in the app store for bill splitting
+<p align="center">
+      <img src="https://i.ibb.co/dDGDjG0/Untitled.png" height="500">
+</p>
+
+<p align="center">
+   <img src="https://img.shields.io/badge/Engine-XCode13.4.1-blueviolet" alt="XCode Version">
+   <img src="https://img.shields.io/badge/IOS-13.2-important" alt="IOS Version">
+   <img src="https://img.shields.io/badge/Version-1.2.1(Realise)-succsess" alt="Project Version">
+   <img src="https://img.shields.io/badge/License-MIT-informational" alt="License">
+</p>
+
+## About
+
+Applications to split the bill for the number of people you need with the inclusion of a tip
+
+## Distribute
+
+- [AppStore](https://apps.apple.com/ru/app/total-bill/id1641753965?l=en)
 
 
-https://apps.apple.com/ru/app/total-bill/id1641753965?l=en
+## Developers
 
+- [Nazar](https://github.com/namazii)
 
-
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-08-25 at 23 05 21](https://user-images.githubusercontent.com/97259944/187023876-b1dbce2b-5495-49a6-b20a-a26df813f872.png)
+## License
+Project is distributed under the MIT license.
